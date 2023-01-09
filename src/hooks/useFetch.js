@@ -37,7 +37,7 @@ const useFetch = (trackSearch, id) => {
 
   useEffect(() => {
     gettingTracks();
-  }, [trackSearch]);
+  }, [trackSearch,id]);
   return { data, loading, error, requestStatus };
 };
 
